@@ -1,0 +1,28 @@
+{
+  "model": "GradientBoostingRegressor",
+  "metric_main": {
+    "name": "MAE",
+    "value": 58.34,
+    "unit": "€"
+  },
+  "metric_secondary": {
+    "name": "R²",
+    "value": 0.663
+  },
+  "cv_results": {
+    "mean": 0.636,
+    "std": 0.01,
+    "metric": "R²",
+    "n_splits": 5
+  },
+  "cv_mae": {
+    "mean": 60.99,
+    "std": 0.64,
+    "unit": "€"
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "n_samples_train": 42306,
+  "n_samples_test": 10577,
+  "n_features": 31
+}

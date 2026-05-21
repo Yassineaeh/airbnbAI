@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+*.joblib
+!model.joblib
+.env
+# Dataset trop volumineux pour git (>100 MB) — à télécharger depuis Inside Airbnb
+listings.csv
+listings.csv.gz
