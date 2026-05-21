@@ -77,7 +77,11 @@ curl -X POST http://localhost:8000/predict \
         "has_wifi": 1, "has_kitchen": 1, "has_washer": 1, "has_tv": 1,
         "has_air_conditioning": 0, "has_elevator": 1, "has_balcony": 1, "has_free_parking": 0
       }'
-# -> {"predicted_price_eur": 309.x, "model": "GradientBoostingRegressor", ...}
+# -> {"predicted_price_eur": 199.5, "model": "GradientBoostingRegressor", ...}
+# (Le notebook utilise df['latitude'].median()/df['longitude'].median() (médian Paris global)
+#  et renvoie ~309 €. Le curl ci-dessus utilise les coords précises de Buttes-Montmartre
+#  (18ᵉ arr.) — plus excentré → prédiction plus basse. Les deux sont des sorties valides
+#  du même modèle, montrant la sensibilité à la géolocalisation exacte.)
 ```
 
 ---
